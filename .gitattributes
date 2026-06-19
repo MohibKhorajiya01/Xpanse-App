@@ -1,7 +1,2 @@
-# Ignore platform specific folders from GitHub language statistics
+# Sirf web folder (jisme HTML hota hai) ko ignore karenge
 web/** linguist-generated
-ios/** linguist-generated
-android/** linguist-generated
-linux/** linguist-generated
-macos/** linguist-generated
-windows/** linguist-generated
