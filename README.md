@@ -1,6 +1,6 @@
-# 💸 Expense Tracker App
+# 💸 Xpanse — Expense Tracker App
 
-A mobile application built using **Flutter** and **Firebase** that helps users track their income, expenses, and manage personal budgets in a simple and organized way. The application allows users to record financial transactions, monitor spending habits, and analyze their financial activity through charts and statistics.
+A mobile application built using **Flutter** and **Firebase** that helps users track their income, expenses, and manage personal budgets in a simple and organized way. The app allows users to record financial transactions, monitor spending habits, and analyze their financial activity through charts and statistics.
 
 ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
 ![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
@@ -53,13 +53,61 @@ A mobile application built using **Flutter** and **Firebase** that helps users t
 
 ---
 
-## 📸 Screenshots
+## 📸 App Screenshots
 
-> Add your app screenshots here for a better first impression.
+A quick look at the app's screens — from onboarding and authentication to tracking income, expenses, and budgets.
 
-| Home | Add Transaction | Statistics |
-|------|------------------|------------|
-| ![home](screenshots/home.png) | ![add](screenshots/add.png) | ![stats](screenshots/stats.png) |
+<table>
+  <tr>
+    <td align="center"><img src="screenshots/splashScreen.png" width="200"/><br/><b>Splash Screen</b></td>
+    <td align="center"><img src="screenshots/login.png" width="200"/><br/><b>Login</b></td>
+    <td align="center"><img src="screenshots/SignIn.png" width="200"/><br/><b>Sign In</b></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="screenshots/HomePage.png" width="200"/><br/><b>Home Page</b></td>
+    <td align="center"><img src="screenshots/Income.png" width="200"/><br/><b>Income</b></td>
+    <td align="center"><img src="screenshots/Expense.png" width="200"/><br/><b>Expense</b></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="screenshots/addIncome.png" width="200"/><br/><b>Add Income</b></td>
+    <td align="center"><img src="screenshots/addExpense.png" width="200"/><br/><b>Add Expense</b></td>
+    <td align="center"><img src="screenshots/Budget.png" width="200"/><br/><b>Budget</b></td>
+  </tr>
+</table>
+
+---
+
+## 📂 Project Structure
+
+The project follows a clean, **feature-based architecture** — separating core utilities, the data layer (models/repositories/services), and feature modules for better scalability and maintainability.
+
+```
+Xpanse/
+├── lib/
+│   ├── main.dart
+│   ├── firebase_options.dart
+│   │
+│   ├── core/                      # Shared utilities, theming & widgets
+│   │   ├── theme/                 # App colors, theme & typography
+│   │   ├── utils/                 # Helper functions (icons, etc.)
+│   │   └── widgets/               # Reusable UI components (buttons, logo, glass effect, shimmer)
+│   │
+│   ├── data/                      # Data layer
+│   │   ├── models/                # Transaction, Wallet, Budget, Category
+│   │   ├── repositories/          # Business logic for each model
+│   │   └── services/              # Auth, Firestore, Settings & Sync services
+│   │
+│   └── features/                  # Feature-based modules
+│       ├── auth/                  # Login, Signup, Onboarding, Email verification, Splash
+│       ├── dashboard/             # Home dashboard & navigation
+│       ├── transactions/          # Add transaction & transaction history
+│       ├── statistics/            # Charts & financial statistics
+│       ├── budget/                # Budget planning
+│       └── settings/              # Wallet & category management, app settings
+│
+├── assets/images/                 # App icons & logos
+└── test/                          # Unit & widget tests
+```
 
 ---
 
@@ -74,10 +122,10 @@ A mobile application built using **Flutter** and **Firebase** that helps users t
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/expense-tracker-app.git
+git clone https://github.com/MohibKhorajiya01/Xpanse-App.git
 
 # Navigate to the project directory
-cd expense-tracker-app
+cd Xpanse-App
 
 # Install dependencies
 flutter pub get
@@ -93,21 +141,7 @@ flutter run
 4. Place them in:
    - `android/app/google-services.json`
    - `ios/Runner/GoogleService-Info.plist`
-5. Run `flutterfire configure` if using FlutterFire CLI.
-
----
-
-## 📂 Project Structure
-
-```
-lib/
-├── models/          # Data models (Transaction, Wallet, Category, etc.)
-├── providers/       # Riverpod state management
-├── screens/         # App screens (Home, Add Transaction, Stats, Auth)
-├── widgets/         # Reusable UI components
-├── services/        # Firebase Auth & Firestore services
-└── main.dart        # App entry point
-```
+5. Run `flutterfire configure` if using the FlutterFire CLI.
 
 ---
 
@@ -125,7 +159,7 @@ lib/
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
-Feel free to check the [issues page](../../issues) or submit a pull request.
+Feel free to check the [issues page](https://github.com/MohibKhorajiya01/Xpanse-App/issues) or submit a pull request.
 
 1. Fork the project
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
@@ -135,17 +169,11 @@ Feel free to check the [issues page](../../issues) or submit a pull request.
 
 ---
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
 ## 👨‍💻 Author
 
 **Mohib Khorajiya**
 
-- GitHub: [@your-username](https://github.com/MohibKhorajiya01)
+- GitHub: [@MohibKhorajiya01](https://github.com/MohibKhorajiya01)
 
 ---
 
