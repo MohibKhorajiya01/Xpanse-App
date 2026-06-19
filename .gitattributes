@@ -1,2 +1,4 @@
-# Sirf web folder (jisme HTML hota hai) ko ignore karenge
+# HTML files ko hamesha ke liye hide karne ke liye
+*.html linguist-detectable=false
+*.html linguist-generated
 web/** linguist-generated
