@@ -156,8 +156,6 @@ flutter run
 
 ---
 
----
-
 ## 👨‍💻 Author
 
 **Mohib Khorajiya**
